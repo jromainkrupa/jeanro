@@ -62,8 +62,7 @@ span {
   flex-grow: 1;
 }
 .video {
-  width: 560px;
-  height: 315px;
+  overflow:hidden;
   margin: 0 auto;
 }
 
@@ -101,22 +100,6 @@ span {
   }
 }
 
-.card-black {
-  background-color: #111827;
-  padding: 40px;
-  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
-  border-radius: 4px;
-  margin: 20px 0px;
-  text-align: center;
-}
-.card-white {
-  background-color:white;
-  color: black;
-  border-radius: 10px;
-  padding: 5px;
-  width: 80%;
-  margin: 30px auto;
-}
 .img-circle {
   border-radius: 50%;
 }
@@ -142,10 +125,10 @@ span {
 }
 .list-inline i {
   font-size: 50px;
-  color: rgb(230, 230, 230);
+  color: white;
 }
 .list-inline i:hover {
-  color: black;
+  color: #13B6A6;
 }
 
 /* Design adjustments using id (1% design remaining) */

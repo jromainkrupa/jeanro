@@ -1,0 +1,64 @@
+
+.card-black {
+  background-color: #111827;
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  margin: 20px 0px;
+  text-align: center;
+}
+.card-white {
+  background-color:white;
+  color: black;
+  border-radius: 10px;
+  padding: 5px;
+  width: 80%;
+  margin: 30px auto;
+}
+
+// books
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: flex-end;
+}
+.card-book {
+  max-width: 250px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 30px;
+  background-color: #444A56;
+
+
+}
+.book-img {
+  width: 100%;
+  object-fit: cover;
+}
+.card-book h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-book p {
+  font-size: 12px;
+
+  margin: 0;
+}
+
+.card-book .card-book-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-book-infos .card-book-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
