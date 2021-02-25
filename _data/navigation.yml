@@ -2,9 +2,9 @@
   link: /
 - name: Services
   link: /services.html
-- name: Resume
-  link: /resume.html
-- name: Blog
-  link: /blog.html
-- name: Portfolio
-  link: /portfolio.html
+# - name: Resume
+#   link: /resume.html
+# - name: Blog
+#   link: /blog.html
+# - name: Portfolio
+#   link: /portfolio.html

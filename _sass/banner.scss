@@ -31,18 +31,26 @@
 .action-position {
   margin-top: 42px;
 }
-.sub-banner-wrapper {
 
-}
 .portrait {
-  background-color:red;
+
   position:relative;
 }
 .portrait img {
   width: 30vw;
   position:absolute;
-    bottom: 0;
+  bottom: 0;
   right: 0;
+}
+
+.sub-banner span {
+  color:white;
+}
+.sub-banner h2 {
+  color:white;
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 800;
 }
 @media only screen and (min-width: 768px) {
 /* tablettes et ordinateurs */
@@ -57,11 +65,26 @@
     padding-top:5vh;
   }
   .sub-banner {
+    height: 60vh;
     text-align:center;
     align-items:center;
+    flex-direction:column;
+    // padding: 5vh 0;
+  }
+  .portrait {
+    width: 45%;
+    height: 200px;
+    // margin: 0 auto;
   }
   .portrait img {
-    width: 87vw;
+    width: 20vh;
+  }
+  .sub-banner h2 {
+    font-size: 24px;
+  }
+  .sub-banner-wrapper p {
+    text-align:left;
+    margin-left: 1em;
   }
 
 }
@@ -80,12 +103,4 @@
 //     width: 100%;
 //   }
 // }
-.sub-banner span {
-  color:white;
-}
-.sub-banner h2 {
-  color:white;
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  font-weight: 800;
-}
+
