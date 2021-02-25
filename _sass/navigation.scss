@@ -1,0 +1,16 @@
+.nav-position {
+  display: flex;
+  height: 6vh;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-position a {
+  color:white;
+}
+#current {
+  color: #13B6A6;
+  text-decoration:underline;
+}
+nav {
+  background-color: black;
+}
