@@ -1,6 +1,5 @@
 /* Colors and fonts */
 body {
-  color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
   font-weight: lighter;
@@ -43,6 +42,12 @@ span {
   color: #13B6A6;
   font-weight: 600;
   font-size: 16px;
+}
+.p-white {
+  color: white;
+}
+.p-dark {
+  color: #444A57;
 }
 .dark {
   background-color: #444A57;
