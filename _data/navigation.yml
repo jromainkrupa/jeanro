@@ -1,10 +1,10 @@
 - name: Home
   link: /
 - name: Services
-  link: /services.html
+  link: /services
 # - name: Resume
 #   link: /resume.html
-# - name: Blog
-#   link: /blog.html
+- name: Blog
+  link: /blog
 # - name: Portfolio
 #   link: /portfolio.html
