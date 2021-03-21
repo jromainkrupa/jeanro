@@ -5,8 +5,6 @@ title:  "How to match 2 strings with special characters (I18n.transliterate)"
 date:   2021-02-23 11:21:51 +0100
 categories: jekyll update
 ---
-# How to match 2 strings with special characters (I18n.transliterate)
-
 Last week during the project week at [Le Wagon Lyon](https://www.lewagon.com/fr/lyon) I discovered a new tip I wanted to share.  The idea was to match 2 strings, the first with special characters, the second without. It is a problem I already encounter with the french language and our "é,  è, ô, ê, à,  â...". For example when you scrap things from the web and try to match them with your DB.
 
 ```ruby
