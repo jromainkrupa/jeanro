@@ -1,11 +1,12 @@
 ---
 layout: post
 author: jean-romain krupa
-title:  "How to match 2 strings with special characters (I18n.transliterate)"
-date:   2021-02-23 11:21:51 +0100
-categories: jekyll update
+title: "How to match 2 strings with special characters (I18n.transliterate)"
+date: 2021-02-23 11:21:51 +0100
+tags: rails i18n project
 ---
-Last week during the project week at [Le Wagon Lyon](https://www.lewagon.com/fr/lyon) I discovered a new tip I wanted to share.  The idea was to match 2 strings, the first with special characters, the second without. It is a problem I already encounter with the french language and our "é,  è, ô, ê, à,  â...". For example when you scrap things from the web and try to match them with your DB.
+
+Last week during the project week at [Le Wagon Lyon](https://www.lewagon.com/fr/lyon) I discovered a new tip I wanted to share. The idea was to match 2 strings, the first with special characters, the second without. It is a problem I already encounter with the french language and our "é, è, ô, ê, à, â...". For example when you scrap things from the web and try to match them with your DB.
 
 ```ruby
 "Hôpital".something     = "Hopital"
@@ -60,8 +61,6 @@ DEFAULT_APPROXIMATIONS = {
           "Ž"=>"Z", "ž"=>"z"
         }
 ```
-
-
 
 Then we could build our 'something' method to **transliterate** our strings thanks to the hash.
 
