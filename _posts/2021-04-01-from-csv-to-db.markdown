@@ -2,10 +2,11 @@
 layout: post
 author: jean-romain krupa
 title: "From a CSV to your Database"
-date: 2021-04-01 14:39:51 +0100
+date: 2021-04-01 11:39:51 +0100
 tags: rails SQL project
 ---
-Sometimes datas are on a a CSV and you have to store those datas in your DB. My first intuition, (which is rarely the most performant) to populate the DB would be to: open, read and an create objects with a Model.find_or_create_by. Something like this : 
+
+Sometimes datas are on a a CSV and you have to store those datas in your DB. My first intuition, (which is rarely the most performant) to populate the DB would be to: open, read and an create objects with a Model.find_or_create_by. Something like this :
 
 ```ruby
 require 'csv'
@@ -28,11 +29,11 @@ p execution_time = finish - start
 # 0.80613
 ```
 
-So now, here is the trick, instead of creating an element at every row of the CSV, we can use plain old SQL with the COPY function. 
+So now, here is the trick, instead of creating an element at every row of the CSV, we can use plain old SQL with the COPY function.
 
 ```ruby
 appellation_filepath = File.join(__dir__,'../../db/data/appellations_bourgogne.csv')
-  
+
 	# the magic is there 👇
   sql = <<-SQL
   COPY public.appellations (name, wine_sub_region, wine_region, country, origin_label)
@@ -40,9 +41,9 @@ appellation_filepath = File.join(__dir__,'../../db/data/appellations_bourgogne.c
   DELIMITER ','
   CSV HEADER QUOTE '"'
   SQL
-  
+
   ActiveRecord::Base.connection.execute(sql)
-  
+
 	finish = Time.now
   p execution_time = finish - start
 	# 0.001766s !!!
