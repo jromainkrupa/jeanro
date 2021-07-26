@@ -159,3 +159,48 @@ and now we need the stylesheet to be compiled by webpack, so add this line in `v
 
 Et voilà ! try it out in a the view by adding something like `<h2 class="bg-green-500">Rails and tailwind are amazing!</h2>`
 
+You can use this amazing [tailwind Ui](https://tailwindui.com/) kit if you want to go faster and have UI components ready to go in your app.
+
+Feel free to create classes thanks to the `@apply keyword`. For example here is how you could create the famous good old bootstrap `btn btn-primary`!
+
+```scss
+// app/javascript/components/button.scss
+
+.btn {
+  @apply inline-flex text-sm font-semibold text-center px-4 py-0 rounded-lg no-underline items-center justify-between;
+
+  height: 45px;
+  line-height: 45px;
+  transition: ease 0.3s background, ease 0.3s transform, ease 0.2s color;
+
+  &:hover,
+  &:focus {
+    @apply cursor-pointer;
+  }
+
+  &:disabled {
+    @apply bg-blue-200 text-white cursor-not-allowed;
+  }
+}
+
+.btn-primary {
+  @apply bg-blue-500 text-white;
+
+  &:hover,
+  &:focus {
+    @apply bg-blue-600 text-white;
+  }
+
+  &.outline {
+    @apply bg-transparent border border-blue-500 text-blue-500 border-blue-500 shadow-none;
+
+    &:hover,
+    &:focus {
+      @apply border-blue-600 text-blue-600 underline;
+    }
+  }
+}
+
+```
+
+remember to `@import "components/buttons";`in your `application.scss` 
