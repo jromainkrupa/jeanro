@@ -12,14 +12,13 @@ Here we go for a quick tailwind css setup, with rails and turbolinks.
 $ tailwindcss@latest postcss@latest autoprefixer@latest
 ```
 
-if you have an error 👇
+if you have an error 👇 then fix it here [here](https://tailwindcss.com/docs/installation#post-css-7-compatibility-build)
 
 ```
 Error: PostCSS plugin tailwindcss requires PostCSS 8.
 ```
 
-then fix it here [here](https://tailwindcss.com/docs/installation#post-css-7-compatibility-build)
-
+Now we need to import tailwindcss in `postcss.config.js` that is in the root of your directory.
 
 ```javascript
 // postcss.config.js
@@ -40,7 +39,7 @@ module.exports = {
 
 ```
 
-you can create the tailwind configuration file with the command
+You can create the tailwind configuration file with the command.
 
 ```
 $ npx tailwindcss init
@@ -63,7 +62,7 @@ module.exports = {
 }
 ```
 
-it is in this file, where you will be able to pimp the tailwind configuration. For example, you can add colors or fonts, ask tailwind to purge the unused classes in production (to reduce the file size)... here is an example of a pimped config file:
+it is in this file, where you will be able to "pimp" the tailwind configuration. For example, you can add colors or fonts, ask tailwind to purge the unused classes in production (to reduce the file size)... here is an example of a pimped config file:
 
 ```javascript
 module.exports = {
@@ -118,9 +117,9 @@ module.exports = {
 
 ```
 
-Now you can move this file into, `javascript/stylesheets` (you need to create the folder stylesheets).
+Now you can move this file into, `javascript/stylesheets` (you need to create the stylesheets folder).
 
-Create the `application.scss`file inside the `javascript/stylesheets` folder. and import tailwind lib
+Create the `application.scss` file inside the `javascript/stylesheets` folder. and import the tailwind lib
 
 ```scss
 @import "tailwindcss/base";
