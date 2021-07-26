@@ -6,9 +6,7 @@ date: 2021-07-26 11:21:51 +0100
 tags: rails tailwind webpack
 ---
 
-# Tailwind setup for rails 
-
-Here we go for a tailwind css setup, with rails and turbolinks.
+Here we go for a quick tailwind css setup, with rails and turbolinks. 
 
 ```bash
 $ tailwindcss@latest postcss@latest autoprefixer@latest
