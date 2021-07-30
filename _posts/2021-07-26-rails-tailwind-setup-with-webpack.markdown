@@ -9,7 +9,7 @@ tags: rails tailwind webpack
 Here we go for a quick tailwind css setup, with rails and turbolinks. 
 
 ```bash
-$ tailwindcss@latest postcss@latest autoprefixer@latest
+$ yarn add tailwindcss@latest postcss@latest autoprefixer@latest
 ```
 
 if you have an error 👇 then fix it here [here](https://tailwindcss.com/docs/installation#post-css-7-compatibility-build)
@@ -78,42 +78,67 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    boxShadow: {
-      sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
-      DEFAULT: "10px 10px 50px rgba(3, 10, 3, 0.1)",
-      md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-      lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-      xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-      "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
-      "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
-      inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
-      none: "none",
-    },
     extend: {
-      fontFamily: {
-        sans: ["Poppins", "Arial", "sans-serif"],
-      },
       colors: {
-        primary: {
-          50: "#F6F7FF",
-          100: "#EDF0FE",
-          200: "#D2D9FD",
-          300: "#B6C1FB",
-          400: "#8093F9",
-          500: "#4965F6",
-          600: "#425BDD",
-          700: "#2C3D94",
-          800: "#212D6F",
-          900: "#161E4A",
-        }
-      },
+        'primary': {
+          50: '#F6F7FF',
+          100: '#EDF0FE',
+          200: '#D2D9FD',
+          300: '#B6C1FB',
+          400: '#8093F9',
+          500: '#4965F6',
+          600: '#425BDD',
+          700: '#2C3D94',
+          800: '#212D6F',
+          900: '#161E4A',
+        },
+        'secondary': {
+          50: '#F5FDF9',
+          100: '#ECFAF4',
+          200: '#CFF3E3',
+          300: '#B2ECD2',
+          400: '#78DDB0',
+          500: '#3ECF8E',
+          600: '#38BA80',
+          700: '#257C55',
+          800: '#1C5D40',
+          900: '#133E2B',
+        },
+        'tertiary': {
+          50: '#F7F7F8',
+          100: '#EEEEF1',
+          200: '#D5D5DB',
+          300: '#BCBCC5',
+          400: '#898A9A',
+          500: '#57586E',
+          600: '#4E4F63',
+          700: '#343542',
+          800: '#272832',
+          900: '#1A1A21',
+        },
+        'danger': {
+          50: '#FEF8F8',
+          100: '#FEF2F2',
+          200: '#FCDEDE',
+          300: '#FACACA',
+          400: '#F7A3A3',
+          500: '#F37B7B',
+          600: '#DB6F6F',
+          700: '#924A4A',
+          800: '#6D3737',
+          900: '#492525',
+        },
+        "code-400": "#fefcf9",
+        "code-600": "#3c455b",
+      }
     },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-};
+}
+
 
 ```
 
