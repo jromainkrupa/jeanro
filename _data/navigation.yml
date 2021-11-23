@@ -1,7 +1,7 @@
 - name: Home
   link: /
-- name: Services
-  link: /services
+# - name: Services
+#   link: /services
 # - name: Resume
 #   link: /resume.html
 - name: Blog
